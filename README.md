@@ -99,13 +99,13 @@ Before running the services, you need to set up your environment variables for S
    # Caddy Config
    ############
 
-   N8N_HOSTNAME=n8n.yourdomain.com
-   WEBUI_HOSTNAME=:openwebui.yourdomain.com
-   FLOWISE_HOSTNAME=:flowise.yourdomain.com
-   SUPABASE_HOSTNAME=:supabase.yourdomain.com
-   OLLAMA_HOSTNAME=:ollama.yourdomain.com
-   SEARXNG_HOSTNAME=searxng.yourdomain.com
-   LETSENCRYPT_EMAIL=your-email-address
+   N8N_HOSTNAME=n8n.kwintes.cloud
+   WEBUI_HOSTNAME=:openwebui.kwintes.cloud
+   FLOWISE_HOSTNAME=:flowise.kwintes.cloud
+   SUPABASE_HOSTNAME=:supabase.kwintes.cloud
+   OLLAMA_HOSTNAME=:ollama.kwintes.cloud
+   SEARXNG_HOSTNAME=searxng.kwintes.cloud
+   LETSENCRYPT_EMAIL=tddezeeuw@gmail.com
    ```   
 
 ---
@@ -260,7 +260,7 @@ docker compose -p localai -f docker-compose.yml -f supabase/docker/docker-compos
 docker compose -p localai -f docker-compose.yml -f supabase/docker/docker-compose.yml pull
 
 # Start services again with your desired profile
-python start_services.py --profile <your-profile>
+python start_services.py --profile cpu
 ```
 
 Replace `<your-profile>` with one of: `cpu`, `gpu-nvidia`, `gpu-amd`, or `none`.
